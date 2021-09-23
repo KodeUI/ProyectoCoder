@@ -29,24 +29,6 @@ body {
 
 }
 
-.nav {
-    margin: 0 auto;
-    justify-content: space-between;
-    display: flex;
-    max-width: 992px;
-}
-
-.navMenu {
-    display: flex;
-    line-height: 120px;
-    list-style: none;
-    text-decoration: none;
-}
-
-.logo {
-    padding: 30px 0px;
-
-}
 
 .navMenuItem {
     text-decoration: none;
@@ -109,23 +91,6 @@ body {
     font-size: 32px;
     font-weight: 800;
     color:black;
-}
-.footer {
-    background-color: olivedrab;
-    height: 120px;
-    text-align: center;
-    line-height: 120px;
-}
-
-.footerItems {
-    text-decoration: none;
-    color: ghostwhite;
-    padding: 0px 12px;
-}
-
-.footerList {
-    text-decoration: none;
-    list-style: none;
 }
 
 .descripcionAboutus {
@@ -214,18 +179,6 @@ body {
     text-transform: uppercase;
 }
 
-.contacto {
-    width: 50vw;
-    height: 60vh;
-    background-image: radial-gradient(circle at -4.17% 95.45%, #839b34 0, #6b8e23 50%, #528110 100%);
-    border-radius: 16px;
-    margin: 80px auto;
-    display: flex;
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
-
-
-
-}
 
 .foto {
     height: 70%;
@@ -243,31 +196,6 @@ body {
     border-radius: 12px;
 }
 
-.formulario {
-    width: 35%;
-    display: flex;
-    flex-direction: column;
-    margin: auto;
-}
-
-.formulario h1 {
-    color: ghostwhite;
-    text-align: center;
-    font-size: 32px;
-    font-weight: 600;
-    margin-bottom: 30px;
-}
-
-.formulario fieldset {
-    font-size: 16px;
-    justify-content: space-around;
-    font-weight: 500;
-    display: flex;
-    flex-direction: column;
-    color: ghostwhite;
-    border: 0px;
-    ; 
-}
 
 input {
     background-color:ghostwhite;
@@ -293,5 +221,41 @@ textarea {
     padding: 6px;
     border-radius: 4px;
     margin: 6px 0px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+.header div {
+    font-size: large;
+    padding: 10px;
+    background-color: ghostwhite;
+}
+
+.header div li {
+    padding: 0 10px 0 0px;
+}
+.container-fluid footer {
+    background-color: ghostwhite;
+    margin: 0px;
+    font-size: medium;
+}
+
+.footer {
+    background-color: ghostwhite;
+}
+
+.map {
+    margin-top: 60px;
+    margin-bottom: 50px;
+
+}
+
+.enviar {
+    margin-top: 25px;
+    text-decoration:none;
+    font-weight: 600;
+    font-size: 18px;
+    padding: 10px;
+    color:ghostwhite;
+    background-color: olivedrab;
+    border-radius: 6px;
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
 }
