@@ -64,9 +64,9 @@
   grid-area: prenda1;
   height: auto;
   max-width: 100%;
-  background-color: olivedrab;
   border-radius: 15px;
   box-shadow: 0 6px 16px rgba(0, 0, 0, 0.5); }
+  
 
 .prenda1 {
   grid-area: prenda1; }
@@ -229,3 +229,17 @@ input, select, textarea {
     background-color: olivedrab;
     border-radius: 6px;
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); }
+
+    @media (max-widht:800px){
+
+      .clases__Item {
+        
+        min-width: 80%;
+        margin: 16px;
+        box-sizing: border-box;
+        text-align: center;
+        height: 200px;
+        background-size: cover;
+        background-position: center;
+      }
+    }

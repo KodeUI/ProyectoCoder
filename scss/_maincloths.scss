@@ -36,3 +36,17 @@ $secondarycolor: ghostwhite;
       text-transform: uppercase;
     }
   }
+
+  @media (max-widht:800px){
+
+    .clases__Item {
+      
+      min-width: 80%;
+      margin: 16px;
+      box-sizing: border-box;
+      text-align: center;
+      height: 200px;
+      background-size: cover;
+      background-position: center;
+    }
+  }

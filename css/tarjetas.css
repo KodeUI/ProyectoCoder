@@ -96,10 +96,10 @@
       justify-self: center;
     }
 
-    @media only screen and (max-widht: 1024px) {
+@media (max-widht: 1024px) {
       .grid {
 
-        margin-top: 60px;
+  margin-top: 60px;
   margin-bottom: 60px;
   display: grid;
   grid-template-columns: repeat (1, 1fr);
@@ -107,12 +107,11 @@
   gap: 5%;
   grid-auto-flow: row;
   grid-template-areas:
-    ". populars ."
-    ". prenda1 ."
-    ". prenda2 ."
-    ". prenda3 ."
-    ". mas .";
-}
+    "populars"
+    "prenda1"
+    "prenda2"
+    "prenda3"
+    "mas";
+      }
     }
-
 

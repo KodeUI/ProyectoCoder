@@ -23,10 +23,9 @@ $secondarycolor: ghostwhite;
   grid-area: prenda1;
   height: auto;
   max-width: 100%;
-  background-color: $maincolor;
   border-radius: 15px;
   box-shadow: 0 6px 16px rgba(0, 0, 0, 0.5);
-}
+
 
 .prenda1 {
   @extend .prendas;
@@ -87,4 +86,5 @@ $secondarycolor: ghostwhite;
 .mas {
   grid-area: mas;
   justify-self: center;
+
 }
