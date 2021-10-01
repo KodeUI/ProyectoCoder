@@ -1,0 +1,90 @@
+$maincolor:olivedrab;
+$secondarycolor: ghostwhite;
+
+
+
+
+
+.grid {
+  margin-top: 60px;
+  margin-bottom: 60px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, min-content);
+  gap: 5%;
+  grid-auto-flow: row;
+  grid-template-areas: ". populars ." "prenda1 prenda2 prenda3" ". mas .";
+}
+
+
+.prendas {
+  display: flex;
+  flex-direction: column;
+  grid-area: prenda1;
+  height: auto;
+  max-width: 100%;
+  background-color: $maincolor;
+  border-radius: 15px;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.5);
+}
+
+.prenda1 {
+  @extend .prendas;
+  grid-area: prenda1;
+  
+}
+
+.prenda2 {
+  @extend .prendas;
+  grid-area: prenda2;
+}
+
+.prenda3 {
+  @extend .prendas;
+  grid-area: prenda3;
+}
+
+.showmore {
+  padding: 10px;
+  width: min-content;
+  height: min-content;
+  grid-area: mas;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 18px;
+  color: $maincolor;
+  background-color: $secondarycolor;
+  border-color: $maincolor;
+  border-style: solid;
+  border-radius: 6px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+
+  &:hover {
+    transition: 0.3s;
+    padding: 10px;
+    width: min-content;
+    height: min-content;
+    grid-area: mas;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 18px;
+    color: $secondarycolor;
+    background-color: $maincolor;
+    border-style: solid;
+    border-radius: 6px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+  }
+}
+
+.populars {
+  justify-self: center;
+  grid-area: populars;
+  color: $maincolor;
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.mas {
+  grid-area: mas;
+  justify-self: center;
+}

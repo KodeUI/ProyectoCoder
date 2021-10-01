@@ -1,0 +1,76 @@
+$maincolor:olivedrab;
+$secondarycolor: ghostwhite;
+
+
+* {
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    font-family: 'Roboto', sans-serif;
+    padding: 120px 0px 0px 0px;
+  }
+  
+  .principal {
+    width: 100%;
+    background-color: $secondarycolor;
+    padding: 30px 60px 100px 60px;
+  }
+  
+
+
+  input, select, textarea {
+    background-color: $secondarycolor;
+    border: 0;
+    padding: 6px;
+    border-radius: 4px;
+    margin: 6px 0px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+  }
+
+  .enviar {
+    margin-top: 25px;
+    text-decoration:none;
+    font-weight: 600;
+    font-size: 18px;
+    padding: 10px;
+    color:ghostwhite;
+    background-color: olivedrab;
+    border-radius: 6px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.showmore2 {
+  &:hover {
+    margin-top: 20px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 18px;
+    padding: 12px;
+    color: olivedrab;
+    background-color: ghostwhite;
+    border-color: olivedrab;
+    border-width: 2,5px;
+    border-style: solid;
+    border-radius: 6px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+  }
+
+  transition: 0.3s;
+  margin-top: 20px;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 18px;
+  padding: 12px;
+  color: ghostwhite;
+  background-color: olivedrab;
+  border-radius: 6px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.map {
+  margin-top: 60px;
+  margin-bottom: 50px;
+
+}

@@ -1,16 +1,16 @@
 .grid {
-   width: 100%;
-   margin-top: 80px;
-   margin-bottom: 120px;
-   display:grid;
-   grid-template-columns: repeat(6,1fr);
-   grid-template-rows: auto;
-   column-gap: 100px;
-   row-gap: 80px;
-   grid-template-areas:".        .        populars populars .        ."
-                       ".        prenda1  prenda2  prenda3  prenda4  ."
-                       ".        .        mas      mas      .        ."            
-  }
+  margin-top: 60px;
+  margin-bottom: 60px;
+  display: grid;
+  grid-template-columns: repeat (3, 1fr);
+  grid-template-rows:auto;
+  gap: 5%;
+  grid-auto-flow: row;
+  grid-template-areas:
+    ". populars ."
+    "prenda1 prenda2 prenda3"
+    ". mas .";
+}
 
   .prenda1 {
     display: flex;
@@ -46,67 +46,10 @@
     box-shadow: 0 6px 16px rgba(0, 0, 0, 0.5);
   }
 
-  .prenda4 {
-    display: flex;
-    flex-direction: column;
-    grid-area: prenda4;
-    height: auto;
-    max-width: 100%;
-    background-color: ghostwhite;
-    border-radius: 15px;
-    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.5);
-  }
+  
 
-  .prenda__imagen {
-    top:0;
-    max-height: 100%;
-    max-width: 100%;
-    overflow:visible;
-    border-radius: 15px 15px 0 0;
-  }
-  
-  .prenda__imagen img {
-    object-fit:cover;
-    height: 100%;
-    width: 100%;
-  }
-  
-  .prenda__contenido {
-    padding: 1em 1em 0;
-    flex-grow: 1;
-    display: flex;
-    flex-direction: column;
-    height: 100%;
-  }
-  
-  .prenda__cabecera {
-    border-bottom: 1px solid olivedrab;
-    margin-bottom: 1em;
-    display: flex;
-    justify-content: space-between;
-    align-items: baseline;
-  }
-  
-  .prenda__nombre {
-    margin: 0;
-    color: olivedrab;
-    font-style: italic;
-  }
-  
-  .prenda__precio {
-    color: olivedrab;
-    font-weight: bolder;
-    font-style: italic;
-  }
-  
-  .prenda__bio {
-    font-size: 0.8em;
-    line-height: 1.5;
-    flex-grow: 1;
-  }
   
   .prenda__compra {
-    align-items: flex-end;
     background-color:olivedrab;
     color: white;
     text-align: center;
@@ -116,12 +59,14 @@
     margin-top: 1em;
     padding: 0.5em;
     text-transform:uppercase;
+    bottom: 0;
   }
   
   .showmore{
     justify-self: center;
     padding: 10px;
     width: min-content;
+    height: min-content;
     grid-area: mas;
     text-decoration:none;
     font-weight: 600;
@@ -129,7 +74,6 @@
     color:olivedrab;
     background-color: ghostwhite;
     border-color:olivedrab;
-    border-width: 2,5px;
     border-style: solid;
     border-radius: 6px;
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
@@ -140,13 +84,13 @@
       justify-self: center;
       padding: 10px;
       width: min-content;
+      height: min-content;
       grid-area: mas;
       text-decoration:none;
       font-weight: 600;
       font-size: 18px;
       color:ghostwhite;
       background-color: olivedrab;
-      border-width: 2,5px;
       border-style: solid;
       border-radius: 6px;
       box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
@@ -160,5 +104,29 @@
       font-weight: 600;
     }
 
+
+    .mas {
+      grid-area: mas;
+      justify-self: center;
+    }
+
+    @media only screen and (max-widht: 1024px) {
+      .grid {
+
+        margin-top: 60px;
+  margin-bottom: 60px;
+  display: grid;
+  grid-template-columns: repeat (3, 1fr);
+  grid-template-rows:repeat(5, 1fr);
+  gap: 5%;
+  grid-auto-flow: row;
+  grid-template-areas:
+    ". populars ."
+    ". prenda1 ."
+    ". prenda2 ."
+    ". prenda3 ."
+    ". mas .";
+}
+    }
 
 

@@ -73,7 +73,7 @@ body {
 
 
 .clases__Main {
-
+    width: 100%;
     margin: 20px auto;
     display: flex;
     flex-wrap: wrap;

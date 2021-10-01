@@ -1,0 +1,31 @@
+$maincolor:olivedrab;
+$secondarycolor: ghostwhite;
+
+
+
+
+.header {
+    background-color: $secondarycolor;
+    height: 120px;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.3);
+    z-index: 2;
+  
+    div {
+      font-size: large;
+      padding: 10px;
+      background-color: $secondarycolor;
+  
+      li {
+        padding: 0 10px 0 0px;
+      }
+    }
+  }
+  
+  .nav-item {
+    font-size: medium;
+    color: $secondarycolor;
+  }

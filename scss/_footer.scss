@@ -1,0 +1,13 @@
+$maincolor:olivedrab;
+$secondarycolor: ghostwhite;
+
+
+
+.footer {
+    bottom: 0;
+    width: 100%;
+    height: fit-content;
+    box-shadow: 6px 0px 16px rgba(0, 0, 0, 0.3);
+    background-color: $secondarycolor;
+    z-index: 2;
+  }
