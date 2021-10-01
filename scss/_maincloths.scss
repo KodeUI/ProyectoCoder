@@ -1,7 +1,21 @@
 $maincolor:olivedrab;
 $secondarycolor: ghostwhite;
 
-  
+@media screen and (max-widht:1024px){
+
+  .clases__Item {
+    flex-grow: 1;
+    min-width: 100%;
+    margin: 16px;
+    box-sizing: border-box;
+    text-align: center;
+    height: 200px;
+    background-size: cover;
+    background-position: center;
+  }
+}  
+
+
   .clases__Main {
     width: 100%;
     margin: 20px auto;
@@ -10,8 +24,8 @@ $secondarycolor: ghostwhite;
   }
   
   .clases__Item {
-    flex-grow: 1;
-    min-width: 25%;
+    flex-grow: 2;
+    min-width: 30%;
     margin: 16px;
     box-sizing: border-box;
     text-align: center;
@@ -37,16 +51,11 @@ $secondarycolor: ghostwhite;
     }
   }
 
-  @media (max-widht:800px){
-
-    .clases__Item {
-      
-      min-width: 80%;
-      margin: 16px;
-      box-sizing: border-box;
-      text-align: center;
-      height: 200px;
-      background-size: cover;
-      background-position: center;
-    }
+  .principal {
+    width: 100%;
+    background-color: $secondarycolor;
+    padding: 30px 60px 100px 60px;
   }
+  
+
+

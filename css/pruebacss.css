@@ -1,3 +1,14 @@
+@media screen and (max-widht: 1024px) {
+  .clases__Item {
+    flex-grow: 1;
+    min-width: 100%;
+    margin: 16px;
+    box-sizing: border-box;
+    text-align: center;
+    height: 200px;
+    background-size: cover;
+    background-position: center; } }
+
 .clases__Main {
   width: 100%;
   margin: 20px auto;
@@ -5,8 +16,8 @@
   flex-wrap: wrap; }
 
 .clases__Item {
-  flex-grow: 1;
-  min-width: 25%;
+  flex-grow: 2;
+  min-width: 30%;
   margin: 16px;
   box-sizing: border-box;
   text-align: center;
@@ -27,6 +38,11 @@
     font-weight: 400;
     border-radius: 6px;
     text-transform: uppercase; }
+
+.principal {
+  width: 100%;
+  background-color: ghostwhite;
+  padding: 30px 60px 100px 60px; }
 
 .header {
   background-color: ghostwhite;
@@ -53,7 +69,7 @@
   margin-bottom: 60px;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(3, min-content);
+  grid-template-rows: auto;
   gap: 5%;
   grid-auto-flow: row;
   grid-template-areas: ". populars ." "prenda1 prenda2 prenda3" ". mas ."; }
@@ -66,7 +82,6 @@
   max-width: 100%;
   border-radius: 15px;
   box-shadow: 0 6px 16px rgba(0, 0, 0, 0.5); }
-  
 
 .prenda1 {
   grid-area: prenda1; }
@@ -124,11 +139,6 @@
 body {
   font-family: 'Roboto', sans-serif;
   padding: 120px 0px 0px 0px; }
-
-.principal {
-  width: 100%;
-  background-color: ghostwhite;
-  padding: 30px 60px 100px 60px; }
 
 input, select, textarea {
   background-color: ghostwhite;
@@ -229,17 +239,3 @@ input, select, textarea {
     background-color: olivedrab;
     border-radius: 6px;
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); }
-
-    @media (max-widht:800px){
-
-      .clases__Item {
-        
-        min-width: 80%;
-        margin: 16px;
-        box-sizing: border-box;
-        text-align: center;
-        height: 200px;
-        background-size: cover;
-        background-position: center;
-      }
-    }
