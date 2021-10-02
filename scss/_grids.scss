@@ -17,6 +17,59 @@ $secondarycolor: ghostwhite;
 }
 
 
+@media only screen and (max-width: 980px) { 
+  .grid {
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    display: grid;
+    row-gap: 3%;
+    grid-template-columns: repeat(3, 15% 60% 15%);
+    grid-template-rows: repeat(4, 5% 30% 30% 5%);
+    grid-template-areas: ". populars ."
+                         ". prenda1 ."
+                         ". prenda2 ."
+                         ". mas ."
+  }
+
+  .prendas {
+    display: flex;
+    flex-direction: column;
+    grid-area: prenda1;
+    height: auto;
+    max-width: 100%;
+    border-radius: 15px;
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.5);
+  }
+}
+
+@media only screen and (max-width: 600px) { 
+  .grid {
+    align-items: center;
+    margin-top: 30px;
+    margin-bottom: 0px;
+    display: grid;
+    row-gap: 2%;
+    grid-template-columns: repeat(3, 10% 80% 10%);
+    grid-template-rows: repeat(3, 10% 80% 10%);
+    grid-template-areas: ". populars ."
+                         ". prenda1 ."
+                         ". mas ."
+  }
+
+  .prendas {
+    display: flex;
+    flex-direction: column;
+    grid-area: prenda1;
+    height: auto;
+    max-width: 100%;
+    border-radius: 15px;
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.5);
+  }
+}
+
+
+
 .prendas {
   display: flex;
   flex-direction: column;
