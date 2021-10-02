@@ -1,10 +1,9 @@
 $maincolor:olivedrab;
 $secondarycolor: ghostwhite;
 
-@media screen and (max-widht:1024px){
-
+@media only screen and (max-widht: 1024px) {
   .clases__Item {
-    flex-grow: 1;
+    flex-grow: 2;
     min-width: 100%;
     margin: 16px;
     box-sizing: border-box;
@@ -13,8 +12,7 @@ $secondarycolor: ghostwhite;
     background-size: cover;
     background-position: center;
   }
-}  
-
+}
 
   .clases__Main {
     width: 100%;
