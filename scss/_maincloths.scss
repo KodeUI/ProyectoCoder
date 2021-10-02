@@ -1,18 +1,7 @@
 $maincolor:olivedrab;
 $secondarycolor: ghostwhite;
 
-@media only screen and (max-widht: 1024px) {
-  .clases__Item {
-    flex-grow: 2;
-    min-width: 100%;
-    margin: 16px;
-    box-sizing: border-box;
-    text-align: center;
-    height: 200px;
-    background-size: cover;
-    background-position: center;
-  }
-}
+
 
   .clases__Main {
     width: 100%;
@@ -20,6 +9,9 @@ $secondarycolor: ghostwhite;
     display: flex;
     flex-wrap: wrap;
   }
+
+
+  
   
   .clases__Item {
     flex-grow: 2;
@@ -30,6 +22,25 @@ $secondarycolor: ghostwhite;
     height: 400px;
     background-size: cover;
     background-position: center;
+  }
+
+  @media only screen and (max-widht: 1024px) {
+    .clases__Main {
+      width: 100%;
+      margin: 20px auto;
+      display: flex;
+      flex-direction: row;
+    }
+  
+    .clases__Item {
+      width: 80%;
+      margin: 16px;
+      box-sizing: border-box;
+      text-align: center;
+      height: 150px;
+      background-size: cover;
+      background-position: center;
+    }
   }
   
   .clases__Item--titulo {

@@ -28,8 +28,8 @@ $secondarycolor: ghostwhite;
     font-weight: 600;
     font-size: 18px;
     padding: 10px;
-    color:ghostwhite;
-    background-color: olivedrab;
+    color:$secondarycolor;
+    background-color: $maincolor;
     border-radius: 6px;
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
 }
@@ -41,9 +41,9 @@ $secondarycolor: ghostwhite;
     font-weight: 600;
     font-size: 18px;
     padding: 12px;
-    color: olivedrab;
-    background-color: ghostwhite;
-    border-color: olivedrab;
+    color: $maincolor;
+    background-color: $secondarycolor;
+    border-color: $maincolor;
     border-width: 2,5px;
     border-style: solid;
     border-radius: 6px;
@@ -56,8 +56,8 @@ $secondarycolor: ghostwhite;
   font-weight: 600;
   font-size: 18px;
   padding: 12px;
-  color: ghostwhite;
-  background-color: olivedrab;
+  color: $secondarycolor;
+  background-color: $maincolor;
   border-radius: 6px;
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
 }
@@ -68,6 +68,3 @@ $secondarycolor: ghostwhite;
 
 }
 
-.d-flex {
-  color: $maincolor;
-}
