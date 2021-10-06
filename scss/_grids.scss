@@ -50,11 +50,11 @@ $secondarycolor: ghostwhite;
     margin-bottom: 0px;
     display: grid;
     row-gap: 2%;
-    grid-template-columns: repeat(3, 10% 80% 10%);
+    grid-template-columns: repeat(1);
     grid-template-rows: repeat(3, 10% 80% 10%);
-    grid-template-areas: ". populars ."
-                         ". prenda1 ."
-                         ". mas ."
+    grid-template-areas: "populars"
+                         "prenda1"
+                         "mas"
   }
 
   .prendas {

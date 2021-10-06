@@ -105,7 +105,10 @@
     row-gap: 3%;
     grid-template-columns: repeat(3, 15% 60% 15%);
     grid-template-rows: repeat(4, 5% 30% 30% 5%);
-    grid-template-areas: ". populars ." ". prenda1 ." ". prenda2 ." ". mas ."; }
+    grid-template-areas: ". populars ."
+ ". prenda1 ."
+ ". prenda2 ."
+ ". mas ."; }
   .prendas, .prenda1, .prenda2, .prenda3 {
     display: flex;
     flex-direction: column;
@@ -124,7 +127,9 @@
     row-gap: 2%;
     grid-template-columns: repeat(3, 10% 80% 10%);
     grid-template-rows: repeat(3, 10% 80% 10%);
-    grid-template-areas: ". populars ." ". prenda1 ." ". mas ."; }
+    grid-template-areas: ". populars ."
+ ". prenda1 ."
+ ". mas ."; }
   .prendas, .prenda1, .prenda2, .prenda3 {
     display: flex;
     flex-direction: column;
