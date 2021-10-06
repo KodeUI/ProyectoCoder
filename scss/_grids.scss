@@ -21,21 +21,21 @@ $secondarycolor: ghostwhite;
   .grid {
     align-items: center;
     margin-top: 20px;
-    margin-bottom: 10px;
+    margin-bottom: 30px;
     display: grid;
     row-gap: 3%;
-    grid-template-columns: repeat(3, 15% 60% 15%);
-    grid-template-rows: repeat(4, 5% 30% 30% 5%);
-    grid-template-areas: ". populars ."
-                         ". prenda1 ."
-                         ". prenda2 ."
-                         ". mas ."
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(5, 5% 30% 30% 30% 5%);
+    grid-template-areas: "populars"
+                         "prenda1"
+                         "prenda2"
+                         "prenda3"
+                         "mas"
   }
 
   .prendas {
     display: flex;
     flex-direction: column;
-    grid-area: prenda1;
     height: auto;
     max-width: 100%;
     border-radius: 15px;
@@ -50,10 +50,12 @@ $secondarycolor: ghostwhite;
     margin-bottom: 0px;
     display: grid;
     row-gap: 2%;
-    grid-template-columns: repeat(1);
-    grid-template-rows: repeat(3, 10% 80% 10%);
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(5, 5% 30% 30% 30% 5%);
     grid-template-areas: "populars"
                          "prenda1"
+                         "prenda2"
+                         "prenda3"
                          "mas"
   }
 
@@ -61,8 +63,8 @@ $secondarycolor: ghostwhite;
     display: flex;
     flex-direction: column;
     grid-area: prenda1;
+    width: 100%;
     height: auto;
-    max-width: 100%;
     border-radius: 15px;
     box-shadow: 0 6px 16px rgba(0, 0, 0, 0.5);
   }
@@ -73,7 +75,6 @@ $secondarycolor: ghostwhite;
 .prendas {
   display: flex;
   flex-direction: column;
-  grid-area: prenda1;
   height: auto;
   max-width: 100%;
   border-radius: 15px;

@@ -65,6 +65,15 @@ $secondarycolor: ghostwhite;
   }
 
 
+
+
+  @media only screen and (max-width: 980px) { 
+    .grid {
+      padding-bottom: 280px;
+    }
+  }
+
+
   .clases__Item--titulo {
     display: flex;
     justify-content: center;
@@ -83,6 +92,7 @@ $secondarycolor: ghostwhite;
   }
 
   .principal {
+    justify-content: center;
     width: 100%;
     height: 100%;
     background-color: $secondarycolor;
