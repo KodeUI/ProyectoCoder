@@ -23,7 +23,7 @@ $secondarycolor: ghostwhite;
     margin-top: 20px;
     margin-bottom: 30px;
     display: grid;
-    row-gap: 3%;
+    row-gap: 4%;
     grid-template-columns: 1fr;
     grid-template-rows: repeat(5, 5% 30% 30% 30% 5%);
     grid-template-areas: "populars"
@@ -49,7 +49,7 @@ $secondarycolor: ghostwhite;
     margin-top: 30px;
     margin-bottom: 0px;
     display: grid;
-    row-gap: 2%;
+    row-gap: 3%;
     grid-template-columns: 1fr;
     grid-template-rows: repeat(5, 5% 30% 30% 30% 5%);
     grid-template-areas: "populars"

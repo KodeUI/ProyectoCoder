@@ -26,7 +26,7 @@ $secondarycolor: ghostwhite;
 
   @media only screen and (max-width: 1240px) {
     .clases__Main {
-      width: 75%;
+      width: 100%;
       margin: 20px auto;
       display: flex;
       flex-direction: row;
@@ -34,8 +34,8 @@ $secondarycolor: ghostwhite;
   
     .clases__Item {
       align-items: center;
-      width:80%;
-      margin: 16px;
+      width:100%;
+      margin: 16px 0px 16px 0px;
       box-sizing: border-box;
       text-align: center;
       height: 150px;
@@ -46,8 +46,7 @@ $secondarycolor: ghostwhite;
  
   @media only screen and (max-width: 600px) { 
     .clases__Main {
-      width: 90%;
-      margin: 20px;
+      width: 100%;
       display: flex;
       flex-direction: row;
     }
@@ -55,7 +54,7 @@ $secondarycolor: ghostwhite;
     .clases__Item {
       align-items: center;
       width: 100%;
-      margin: 16px;
+      margin: 16px 0px 16px 0px;
       box-sizing: border-box;
       text-align: center;
       height: 150px;
@@ -69,7 +68,7 @@ $secondarycolor: ghostwhite;
 
   @media only screen and (max-width: 980px) { 
     .grid {
-      padding-bottom: 280px;
+      padding-bottom: 250px;
     }
   }
 

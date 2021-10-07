@@ -6,6 +6,22 @@ $secondarycolor: ghostwhite;
   background-color: $secondarycolor;
 }
 
+@media only screen and (min-width: 980px) { 
+
+  .mainscreen container-fluid {
+    width: 80vw;
+    align-self: center;
+  
+  }
+    h1 {
+      color: $maincolor;
+      font-size: 40px;
+      font-weight: 500;
+    }
+}
+
+
+
 .carousel-item {
     height: 70vh;
     margin-top: 45px;
